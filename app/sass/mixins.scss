@@ -1,0 +1,22 @@
+@mixin centerSelf {
+  align-self    : center;
+  justify-self  : center;
+}
+
+@mixin fontAwesome($position, $icone, $weight){
+  &::#{$position} {
+    content       : $icone;
+    font-family   : "Font Awesome 5 Free";
+    font-weight   : #{$weight};
+  }
+}
+
+@mixin media-min($_min-width) {
+  @media screen and (min-width: $_min-width) {
+      &{ @content; }
+  }
+}
+
+@mixin ombre {
+  filter    : drop-shadow(0 5px 5px #00233c8f);
+}

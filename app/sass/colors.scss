@@ -1,0 +1,47 @@
+$couleurLogo : #76c802;
+
+.default-color-context {
+  background-color    : var(--secondaire);
+  color               : var(--dominante);
+}
+.footer-color-context{
+  background-color    : var(--dominante);
+  color               : lighten($color: #262627, $amount: 30%);
+}
+
+.color-context-block2{
+  background-color    : $couleurLogo;
+  color               : var(--secondaire);
+}
+
+.color-context-block1 {
+  background-color    : var(--accent1);
+  color               : var(--dominante);
+
+}
+
+// .color-context-5{
+//   background-color    : var(--accent3);
+//   color               : var(--dominante);
+// }
+
+:root {
+  --dominante    : #262627;
+  --secondaire   : #f8f5f2;
+  --accent1      : #ffa000;//#e6b925;
+  --accent2      : #95ced7;//#88cfd1;
+  --accent3      : #ff8b85;
+  --accent4      : #687d5c;
+  --accent5      : #aa4a38;
+
+  @media (prefers-color-scheme: dark) {
+
+    --dominante    : #f8f5f2;
+    --secondaire   : $dominante;
+    --accent1      : #ffa000;//#e6b925;
+    --accent2      : #95ced7;//#88cfd1;
+    --accent3      : #ff8b85;
+    --accent4      : #687d5c;
+    --accent5      : #aa4a38;
+  }
+}

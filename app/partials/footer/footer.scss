@@ -1,0 +1,37 @@
+footer {
+  // --espacement: calc(calc(100vw - var(--largeur)) / 2);
+  @extend .footer-color-context;
+  grid-area: footer;
+  padding-top: 100px;
+  // padding-left: 4rem var(--espacement);
+  text-align: center;
+  // .p{
+  //   display: flex;
+// .a{
+//   display: flex;
+//   flex-direction: column;
+// }
+}
+// .copy{
+//   display:flex;
+//   justify-content: center;
+// }
+
+// .a{
+//   display: block;
+// }
+// .p{
+//   text-align: center;
+//   padding-left: 40px;
+// }
+  // img {
+  //   height: 3rem;
+  // }
+// .p{
+//   text-align: center !important;
+// }
+// }
+//   a.p {
+//     display: block;
+//   }
+// }

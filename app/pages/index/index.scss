@@ -1,0 +1,48 @@
+.index{
+  p {
+    height: fit-content;
+    justify-self: center;
+    // max-width: 90%;
+    text-align: center;
+  }
+  .hero{
+    @extend .color-context-block1;
+    display: grid;
+    background-image: url("../images/fond_rozen_drome.jpg");
+    background-size: cover;
+    grid-template-areas: "titre""logo""texte";
+
+    @include media-min($large){
+      grid-template-areas: 
+        "titre logo"
+        "texte logo";
+      grid-template-rows: 50% 50%;
+    }
+
+    p{
+      grid-area: texte;
+      @extend .color-context-block2;
+    }
+
+    img{
+      @include ombre;
+      @include centerSelf;
+      grid-area: logo;
+      height: auto;
+      max-height: 430px;
+      max-width: 40vw;
+      width: auto;
+    }
+
+    h1{
+      @include centerSelf;
+      grid-area: titre;
+      text-align: center;
+      @include media-min($large){
+        align-self: end;
+        transform: translateY(6rem);
+        font-size: 5rem;
+      }
+    }
+  }
+}
